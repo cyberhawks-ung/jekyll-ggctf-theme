@@ -30,7 +30,10 @@ h5 {  font-size: 1.28em; }
 h6 {  font-size: 0.96em; }
 p, ul, ol { font-size: 1em;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--alt-color); }
-a:hover { color: var(--bg-color); background-color: var(--alt-color); }
+a:not(.home_header):not(.detail_header):hover {
+  color: var(--bg-color);
+  background-color: var(--alt-color);
+}
 .primary-text { color: var(--main-color); }
 @media only screen and (max-device-width: 500px) { * { font-size: 12px !important; } }
 b, strong { color: var(--main-color); }
